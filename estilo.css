@@ -6,8 +6,7 @@
     
 }
 body{
-height:550px;
-width:550px;
+display: flex;
 }
 
 .container{
