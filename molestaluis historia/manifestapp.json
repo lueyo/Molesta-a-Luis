@@ -1,0 +1,16 @@
+{
+    "name": "Molesta a Luis",
+    "short_name": "MolestaLuis",
+    "theme_color":"#ffe08a",
+    "backround_color":"ffe08a",
+    "display": "standalone",
+    "orientation":"portrait",
+    "scope":"./",
+    "start_url":"./",
+    "icons":[{
+        "src": "./luis.png",
+        "type":"image/png",
+        "sizes": "512x512"
+    }
+    ]
+}

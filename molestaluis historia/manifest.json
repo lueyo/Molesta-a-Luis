@@ -1,0 +1,26 @@
+{   "id":"luis",
+    "manifest_version": 2,
+    "name": "Molesta a Luis",
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "lualsi@cemval.orgia",
+        "strict_min_version": "42.0"
+      }
+    },
+    
+    "description": "Dale click a luis",
+    "version": "1.0",
+    "browser_action":{
+        "default_popup": "index.html",
+        "default_title": "Molesta a Luis",
+        "browser_style":true,
+        "default_icon":{
+          "48":  "luis.png"
+
+        }
+        
+    },
+    "permisions":[
+      "activeTab"
+    ]
+}

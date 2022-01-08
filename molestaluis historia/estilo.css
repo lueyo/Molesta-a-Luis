@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px rgb(255, 252, 60);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+body{
+display: flex;
+flex-wrap: wrap;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url(cole.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    user-select: none;
+}
+.luis{
+    position: relative;
+    width: 25vw;
+    height: 50vh;
+    
+}
+.boton {
+  background-color: #fcfcfc5e; /* Green */
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  padding: 2% 6%;
+  font-size: 125%;
+  display: inline-block;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.inputstyle{
+    background-color:#fcfcfc5e ;
+    padding: 2% 6%;
+    font-size: 125%;
+}
+.dif{
+    font-size: 500%;
+}
+.conmolesta{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 200%;
+}
+.cps{
+    font-size: 200%;
+}
+.reinibattle{
+    display: none;
+}
+.selector{
+    width: 100%;
+}
+.regreso{
+    float: left ;
+    height: 3vh;
+    width: 3vw;
+}
+.divclicks{
+    display: none;
+}
+
+.boton1{
+    height: 3vh;
+    width: 3vw;
+}
+.boton0{
+    height: 3vh;
+    width: 3vw;
+}
+
+.boton2{
+    height: 3vh;
+    width: 3vw;
+}
+button{
+    background-color: #fcfcfc65; 
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  padding: 2% 6%;
+  font-size: 125%;
+  display: inline-block;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.titulofen{
+    font-size: 200%;
+}
+.subtitulo{
+    font-size:300%;
+}
