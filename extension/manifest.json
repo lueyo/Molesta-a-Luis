@@ -3,7 +3,7 @@
     "name": "Molesta a Luis",
     "browser_specific_settings": {
       "gecko": {
-        "id": "momazos_luis",
+        "id": "lualsi@cemval.orgia",
         "strict_min_version": "1.1"
       }
     },
@@ -13,13 +13,14 @@
     "browser_action":{
         "default_popup": "popup.html",
         "default_title": "Molesta a Luis",
-        "browser_style":true,
+        "browser_style":false,
         "default_icon":{
-          "16":  "luis.png",
-          "24":  "luis.png",
-          "32":  "luis.png",
-          "48":  "luis.png",
-          "64":  "luis.png"
+          "16":"luis.jpg",
+          "24":"luis.jpg",
+          "32": "luis.jpg",
+          "48":  "luis.jpg",
+          "64": "luis.jpg"
+
         }
         
     },
