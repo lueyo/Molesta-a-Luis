@@ -7,7 +7,13 @@
 }
 body{
 display: flex;
-flex-wrap: wrap;
+flex-wrap: wrap;/*
+height: 600px;
+width: ; */
+}
+button{
+    height: 3vh;
+    width: 3vw;
 }
 
 .container{
@@ -27,6 +33,10 @@ flex-wrap: wrap;
     height: 50vh;
     
 }
+img{
+    height: 400px;
+    width: 400px;
+}
 .boton {
   background-color: #fcfcfc5e; /* Green */
   border: none;
@@ -36,7 +46,10 @@ flex-wrap: wrap;
   padding: 2% 6%;
   font-size: 125%;
   display: inline-block;
-    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+   box-shadow: 2px 2px 2px rgb(255, 255, 255);
+   width: 100%;
+   height: 4vw;
+    
 }
 .inputstyle{
     background-color:#fcfcfc5e ;
@@ -56,7 +69,10 @@ flex-wrap: wrap;
     font-size: 200%;
 }
 .reinibattle{
-    display: none;
+     display: none;
+     height: 4vw;
+     width: 100%;
+
 }
 .selector{
     width: 100%;

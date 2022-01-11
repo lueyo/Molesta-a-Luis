@@ -4,6 +4,7 @@ title.textContent="Menú";
 let boton1=document.querySelector(".boton1");
 let boton0=document.querySelector(".boton0");
 let boton2=document.querySelector(".boton2");
+let boton3=document.querySelector(".boton3");
 let titulofen=document.querySelector(".titulofen");
 let reinibattle=document.querySelector(".reinibattle");
 let cps=0;
@@ -17,15 +18,18 @@ let velocidad=0;
 let molesta=document.querySelector(".molesta");
 let d=100;
 let counter=-1;
+let container=document.querySelector(".container")
 batallador.addEventListener("click", ()=> {clicks++
 clicksplayer++
+
 });
+batallador.style.display="none";
 function update(){ 
     document.querySelector(".cps").textContent="CPS "+cps;
 };
 setInterval(()=>{ms+=1000
     cps =Math.round((clicks / (ms/1000)));
-    if(batallador.getAttribute("src")=="ofen.png"||"pedro.png"){
+    if(batallador.getAttribute("src")=="ofen.png"||"pedro.png"||"diego.jpg"){
      counter--;
     }
      update();
@@ -60,6 +64,11 @@ setInterval(()=>{
     if(batallador.getAttribute("src")=="ofen.png"){
     clicksrival+=Math.floor((Math.random() * 6) + 1);
 }},500)
+   setInterval(()=>{ 
+       if(batallador.getAttribute("src")=="diego.jpg"){
+        clicksrival+=Math.floor((Math.random() * 6) + 5);
+    }},1000)
+
 boton1.addEventListener("click",()=>{
     counter=15;
     batallador.setAttribute("id", "ofen");
@@ -69,10 +78,13 @@ boton1.addEventListener("click",()=>{
     title.textContent="Ofendedor";
     boton0.style.display="none";
     boton2.style.display="none";
+    boton3.style.display="none";
     reinibattle.style.display="inline";
     divclicks.style.display="inline"
     document.querySelector(".titulofen").textContent="Ofendedor"
-
+    batallador.style.display="inline";
+    container.style.backgroundImage="url('fondofen.png')";
+    
 
 
     
@@ -88,9 +100,12 @@ reinibattle.addEventListener("click",()=>{
     boton1.style.display="inline";
     boton0.style.display="inline";
     boton2.style.display="inline";
+    boton3.style.display="inline";
     reinibattle.style.display="none";
     divclicks.style.display="none"    
     document.querySelector(".titulofen").textContent="Elige el boss"
+    batallador.style.display="none"
+    container.style.backgroundImage="url('cole.png')";
 })
 boton0.addEventListener("click",()=>{
     window.location.href="luis.html"
@@ -102,14 +117,35 @@ boton2.addEventListener("click",()=>{
     batallador.setAttribute("src", "pedro.png");
     titulofen.textContent="Pedro Sánchez";
     title.textContent="Pedro Sánchez";
+    batallador.style.display="inline";
     boton1.style.display="none";
     boton0.style.display="none";
     boton2.style.display="none";
+    boton3.style.display="none"
     reinibattle.style.display="inline";
     divclicks.style.display="inline";
+    container.style.backgroundImage="url('psoe.png')";
     subtitulo.textContent="Este rival te roba los clicks por segundo para usarlos el";
-    document.querySelector(".titulofen").textContent="Pedro Sánchez"
+    document.querySelector(".titulofen").textContent="Pedro Sánchez";
+    container.style.backgroundImage="url('pedro.png')";
 })
+boton3.addEventListener("click",()=>{
+    batallador.setAttribute("id", "diego");
+    counter=25;
+    batallador.setAttribute("src", "diego.jpg");
+    titulofen.textContent="Momazos Diego";
+    title.textContent="Momazos Diego";
+    batallador.style.display="inline";
+    boton1.style.display="none";
+    boton0.style.display="none";
+    boton2.style.display="none";
+    boton3.style.display="none"
+    reinibattle.style.display="inline";
+    divclicks.style.display="inline";
+    document.querySelector(".titulofen").textContent="Momazos Diego";
+    container.style.backgroundImage="url('fondobi.jpg')";});
+
 setInterval(()=>{
-    clicksrival+=Math.round(clicksplayer/5);
+    if (batallador.getAttribute("src")=="pedro.png"){
+    clicksrival+=Math.round(clicksplayer/5)}
 },5000)
