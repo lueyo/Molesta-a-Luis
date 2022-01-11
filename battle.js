@@ -29,7 +29,7 @@ function update(){
 };
 setInterval(()=>{ms+=1000
     cps =Math.round((clicks / (ms/1000)));
-    if(batallador.getAttribute("src")=="ofen.png"||"pedro.png"||"diego.jpg"){
+    if(batallador.getAttribute("src")=="ofen.jpg"||"pedro.jpg"||"diego.jpg"){
      counter--;
     }
      update();
@@ -57,11 +57,11 @@ setInterval(()=>{
 ,10
 )
 setInterval(()=>{
-    if (batallador.getAttribute("src")=="pedro.png"){
+    if (batallador.getAttribute("src")=="pedro.jpg"){
         
         clicksrival+=Math.floor((Math.random() * 4) + 1);
     }
-    if(batallador.getAttribute("src")=="ofen.png"){
+    if(batallador.getAttribute("src")=="ofen.jpg"){
     clicksrival+=Math.floor((Math.random() * 6) + 1);
 }},500)
    setInterval(()=>{ 
@@ -72,7 +72,7 @@ setInterval(()=>{
 boton1.addEventListener("click",()=>{
     counter=15;
     batallador.setAttribute("id", "ofen");
-    batallador.setAttribute("src", "ofen.png");
+    batallador.setAttribute("src", "ofen.jpg");
     titulofen="Ofendedor";
     boton1.style.display="none";
     title.textContent="Ofendedor";
@@ -83,7 +83,7 @@ boton1.addEventListener("click",()=>{
     divclicks.style.display="inline"
     document.querySelector(".titulofen").textContent="Ofendedor"
     batallador.style.display="inline";
-    container.style.backgroundImage="url('fondofen.png')";
+    container.style.backgroundImage="url('fondofen.jpg')";
     
 
 
@@ -105,7 +105,7 @@ reinibattle.addEventListener("click",()=>{
     divclicks.style.display="none"    
     document.querySelector(".titulofen").textContent="Elige el boss"
     batallador.style.display="none"
-    container.style.backgroundImage="url('cole.png')";
+    container.style.backgroundImage="url('cole.jpg')";
 })
 boton0.addEventListener("click",()=>{
     window.location.href="luis.html"
@@ -114,7 +114,7 @@ boton0.addEventListener("click",()=>{
 boton2.addEventListener("click",()=>{
     batallador.setAttribute("id", "pedro");
     counter=20
-    batallador.setAttribute("src", "pedro.png");
+    batallador.setAttribute("src", "pedro.jpg");
     titulofen.textContent="Pedro Sánchez";
     title.textContent="Pedro Sánchez";
     batallador.style.display="inline";
@@ -124,10 +124,10 @@ boton2.addEventListener("click",()=>{
     boton3.style.display="none"
     reinibattle.style.display="inline";
     divclicks.style.display="inline";
-    container.style.backgroundImage="url('psoe.png')";
+    container.style.backgroundImage="url('psoe.jpg')";
     subtitulo.textContent="Este rival te roba los clicks por segundo para usarlos el";
     document.querySelector(".titulofen").textContent="Pedro Sánchez";
-    container.style.backgroundImage="url('pedro.png')";
+    container.style.backgroundImage="url('pedro.jpg')";
 })
 boton3.addEventListener("click",()=>{
     batallador.setAttribute("id", "diego");
@@ -146,6 +146,6 @@ boton3.addEventListener("click",()=>{
     container.style.backgroundImage="url('fondobi.jpg')";});
 
 setInterval(()=>{
-    if (batallador.getAttribute("src")=="pedro.png"){
+    if (batallador.getAttribute("src")=="pedro.jpg"){
     clicksrival+=Math.round(clicksplayer/5)}
 },5000)

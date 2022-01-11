@@ -21,7 +21,7 @@ button{
     height: 100vh;
     display: grid;
     place-content: center;
-    background-image: url(cole.png);
+    background-image: url(cole.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
