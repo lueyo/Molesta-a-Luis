@@ -1,0 +1,29 @@
+{   "id":"luis",
+    "manifest_version": 2,
+    "name": "Molesta a Luis",
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "momazos_luis",
+        "strict_min_version": "1.1"
+      }
+    },
+    
+    "description": "Dale click a luis",
+    "version": "1.0",
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default_title": "Molesta a Luis",
+        "browser_style":true,
+        "default_icon":{
+          "16":  "luis.png",
+          "24":  "luis.png",
+          "32":  "luis.png",
+          "48":  "luis.png",
+          "64":  "luis.png"
+        }
+        
+    },
+    "permisions":[
+      "activeTab"
+    ]
+}
