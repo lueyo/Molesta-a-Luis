@@ -7,13 +7,13 @@
 }
 body{
 display: flex;
-flex-wrap: wrap;
+flex-wrap: wrap;/*
 height: 600px;
-width: 600px; 
+width: ; */
 }
 button{
-    height: 30px;
-    width: 10px;
+    height: 60px;
+    width: 60px;
 }
 
 .container{
@@ -26,11 +26,11 @@ button{
     background-attachment: fixed;
     background-size:cover;
     user-select: none;
+
 }
 .luis{
     position: relative;
-    width: 25vw;
-    height: 50vh;
+    
     
 }
 img{
@@ -48,7 +48,7 @@ img{
   display: inline-block;
    box-shadow: 2px 2px 2px rgb(255, 255, 255);
    width: 100%;
-   height: 4vw;
+   height: 40px;
     
 }
 .inputstyle{
@@ -70,9 +70,8 @@ img{
 }
 .reinibattle{
      display: none;
-     height: 30px;
+     height: 40px;
      width: 100%;
-
 }
 .selector{
     width: 100%;
@@ -86,19 +85,8 @@ img{
     display: none;
 }
 
-.boton1{
-    height: 3vh;
-    width: 3vw;
-}
-.boton0{
-    height: 3vh;
-    width: 3vw;
-}
 
-.boton2{
-    height: 3vh;
-    width: 3vw;
-}
+
 button{
     background-color: #fcfcfc65; 
   border: none;
@@ -111,7 +99,7 @@ button{
     box-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 .titulofen{
-    font-size: 150%;
+    font-size: 175%;
 }
 .subtitulo{
     font-size:300%;
