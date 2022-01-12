@@ -7,13 +7,13 @@
 }
 body{
 display: flex;
-flex-wrap: wrap;/*
+flex-wrap: wrap;
 height: 600px;
-width: ; */
+width: 600px; 
 }
 button{
-    height: 3vh;
-    width: 3vw;
+    height: 30px;
+    width: 10px;
 }
 
 .container{
@@ -70,7 +70,7 @@ img{
 }
 .reinibattle{
      display: none;
-     height: 4vw;
+     height: 30px;
      width: 100%;
 
 }

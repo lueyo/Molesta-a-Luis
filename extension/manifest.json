@@ -4,23 +4,22 @@
     "browser_specific_settings": {
       "gecko": {
         "id": "lualsi@cemval.orgia",
-        "strict_min_version": "1.1"
+        "strict_min_version": "42.0"
       }
     },
     
     "description": "Dale click a luis",
-    "version": "1.0",
+    "version": "1.1.1",
     "browser_action":{
         "default_popup": "popup.html",
         "default_title": "Molesta a Luis",
-        "browser_style":false,
+        "browser_style":true,
         "default_icon":{
-          "16":"luis.jpg",
-          "24":"luis.jpg",
-          "32": "luis.jpg",
-          "48":  "luis.jpg",
-          "64": "luis.jpg"
-
+          "16":  "luis.png",
+          "24":  "luis.png",
+          "32":  "luis.png",
+          "48":  "luis.png",
+          "64":  "luis.png"
         }
         
     },
