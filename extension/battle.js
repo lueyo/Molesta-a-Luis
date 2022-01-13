@@ -5,6 +5,7 @@ let boton1=document.querySelector(".boton1");
 let boton0=document.querySelector(".boton0");
 let boton2=document.querySelector(".boton2");
 let boton3=document.querySelector(".boton3");
+let boton4=document.querySelector(".boton4");
 let titulofen=document.querySelector(".titulofen");
 let reinibattle=document.querySelector(".reinibattle");
 let cps=0;
@@ -29,7 +30,7 @@ function update(){
 };
 setInterval(()=>{ms+=1000
     cps =Math.round((clicks / (ms/1000)));
-    if(batallador.getAttribute("src")=="ofen.jpg"||"pedro.jpg"||"diego.jpg"){
+    if(batallador.getAttribute("src")!=""){
      counter--;
     }
      update();
@@ -64,21 +65,23 @@ setInterval(()=>{
     if(batallador.getAttribute("src")=="ofen.jpg"){
     clicksrival+=Math.floor((Math.random() * 6) + 1);
 }},500)
-   setInterval(()=>{ 
+setInterval(()=>{ 
        if(batallador.getAttribute("src")=="diego.jpg"){
         clicksrival+=Math.floor((Math.random() * 6) + 5);
     }},1000)
+
+setInterval(()=>{ 
+        if(batallador.getAttribute("src")=="adria.jpg"){
+         clicksrival+=Math.floor((Math.random() *2.5 ) + 1);
+     }},250)
 
 boton1.addEventListener("click",()=>{
     counter=15;
     batallador.setAttribute("id", "ofen");
     batallador.setAttribute("src", "ofen.jpg");
     titulofen="Ofendedor";
-    boton1.style.display="none";
     title.textContent="Ofendedor";
-    boton0.style.display="none";
-    boton2.style.display="none";
-    boton3.style.display="none";
+    esconderbotones();
     reinibattle.style.display="inline";
     divclicks.style.display="inline"
     document.querySelector(".titulofen").textContent="Ofendedor"
@@ -97,10 +100,7 @@ reinibattle.addEventListener("click",()=>{
     title.textContent="Menú";
     clicksplayer=0;
     counter=-1;
-    boton1.style.display="inline";
-    boton0.style.display="inline";
-    boton2.style.display="inline";
-    boton3.style.display="inline";
+    mostrarbotones();
     reinibattle.style.display="none";
     divclicks.style.display="none"    
     document.querySelector(".titulofen").textContent="Elige el boss"
@@ -118,10 +118,7 @@ boton2.addEventListener("click",()=>{
     titulofen.textContent="Pedro Sánchez";
     title.textContent="Pedro Sánchez";
     batallador.style.display="inline";
-    boton1.style.display="none";
-    boton0.style.display="none";
-    boton2.style.display="none";
-    boton3.style.display="none"
+    esconderbotones();
     reinibattle.style.display="inline";
     divclicks.style.display="inline";
     container.style.backgroundImage="url('psoe.jpg')";
@@ -136,16 +133,40 @@ boton3.addEventListener("click",()=>{
     titulofen.textContent="Momazos Diego";
     title.textContent="Momazos Diego";
     batallador.style.display="inline";
-    boton1.style.display="none";
-    boton0.style.display="none";
-    boton2.style.display="none";
-    boton3.style.display="none"
+    esconderbotones();
     reinibattle.style.display="inline";
     divclicks.style.display="inline";
     document.querySelector(".titulofen").textContent="Momazos Diego";
     container.style.backgroundImage="url('fondobi.jpg')";});
 
+boton4.addEventListener("click",()=>{
+    batallador.setAttribute("id", "adria");
+    counter=30;
+    batallador.setAttribute("src", "adria.jpg");
+    titulofen.textContent="Libertad y lo que Surja";
+    title.textContent="Libertad y lo que Surja";
+    batallador.style.display="inline";
+    esconderbotones();
+    reinibattle.style.display="inline";
+    divclicks.style.display="inline";
+    document.querySelector(".titulofen").textContent="Libertad y lo que Surja";
+    container.style.backgroundImage="url('ancap.jpg')";});
+
 setInterval(()=>{
     if (batallador.getAttribute("src")=="pedro.jpg"){
     clicksrival+=Math.round(clicksplayer/5)}
 },5000)
+function esconderbotones(){
+    boton1.style.display="none";
+    boton0.style.display="none";
+    boton2.style.display="none";
+    boton3.style.display="none";
+    boton4.style.display="none";
+}
+function mostrarbotones(){
+    boton1.style.display="inline";
+    boton0.style.display="inline";
+    boton2.style.display="inline";
+    boton3.style.display="inline";
+    boton4.style.display="inline";
+}
